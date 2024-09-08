@@ -1,0 +1,59 @@
+const customers = [
+    {
+        path: "/customers",
+        component: () => import("../layouts/customer.vue"),
+        children: [
+            // Quản lý home
+            {
+                path: "home",
+                name: "customers-home",
+                component: () => import ("../pages/customers/home/index.vue")
+            },
+
+            //quan ly iphone
+            {
+                path: "iphone",
+                name: "customers-iphone",
+                component: () => import ("../pages/customers/iphone/index.vue")
+            },
+
+            //quan ly ipad
+            {
+                path: "ipad",
+                name: "customers-ipad",
+                component: () => import ("../pages/customers/ipad/index.vue")
+            },
+
+            //quan ly airpod
+            {
+                path: "airpod",
+                name: "customers-airpod",
+                component: () => import ("../pages/customers/airpod/index.vue")
+            },
+
+            //quan ly macbook
+            {
+                path: "mac",
+                name: "customers-mac",
+                component: () => import ("../pages/customers/mac/index.vue")
+            },
+
+            //quan ly watch
+            {
+                path: "watch",
+                name: "customers-watch",
+                component: () => import ("../pages/customers/watch/index.vue")
+            },
+
+            //quan ly contact
+            {
+                path: "contact",
+                name: "customers-contact",
+                component: () => import ("../pages/customers/contact/index.vue")
+            },
+
+        ]
+    }
+];
+
+export default customers;
