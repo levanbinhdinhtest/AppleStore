@@ -2,10 +2,13 @@ const customers = [
     {
         path: "/customers",
         component: () => import("../layouts/customer.vue"),
+        redirect: "/", // Chuyển hướng tới trang home
+        
         children: [
             // Quản lý home
             {
                 path: "home",
+                alias:"/",
                 name: "customers-home",
                 component: () => import ("../pages/customers/home/index.vue")
             },
