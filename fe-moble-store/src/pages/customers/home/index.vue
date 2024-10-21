@@ -256,8 +256,35 @@
 </template>
 
 <script>
+import { ref, reactive, onMounted } from "vue";
+import { useRouter } from "vue-router";
+import { useRoute } from "vue-router";
+import axios from "axios";
 export default {
-  setup() {},
+  setup() {
+    // const getUserLogin = () =>{
+    //   // Lấy username từ localStorage
+    // const username = localStorage.getItem('username');
+    // if(username){
+    //   axios.get(`http://127.0.0.1:8000/api/customers/home/${username}`)
+    //   .then((response)=>{
+    //       console.log(response)
+    //       localStorage.setItem('avatar', response.data.avatar);  // Lưu avatar
+    //   })
+    //   .catch((error)=>{
+    //     console.log(error)
+    //   })
+    // }
+    // else{
+    //   console.log('Username not found in localStorage');
+    // }
+
+    // }
+
+    // onMounted(()=>{
+    //   getUserLogin();
+    // })
+  },
 };
 </script>
 

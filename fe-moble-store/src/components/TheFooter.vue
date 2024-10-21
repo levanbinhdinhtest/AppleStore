@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row footer " style="background-color: #dad7d7">
+        <div class="row footer " style="background-color: #dad7d7 ;">
         <div
           class="col-12 d-sm-flex justify-content-sm-center d-flex justify-content-center"
         >

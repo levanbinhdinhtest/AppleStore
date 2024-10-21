@@ -54,9 +54,20 @@ const customers = [
                 name: "customers-contact",
                 component: () => import ("../pages/customers/contact/index.vue")
             },
+            {
+                path: "login",
+                name: "customers-login",
+                component:()=> import("../pages/customers/login-signup/login/index.vue")
+            },
+            {
+                path: "signup",
+                name: "customers-signup",
+                component:()=> import("../pages/customers/login-signup/sign-up/index.vue")
+            },
 
         ]
-    }
+    },
+ 
 ];
 
 export default customers;
